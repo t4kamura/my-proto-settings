@@ -1,0 +1,16 @@
+node_modules
+.next
+dist
+out
+server/migration
+server/index.js
+build/
+public/
+**/coverage/
+**/*.min.js
+*.config.js
+*.config.ts
+.*lintrc.js
+next-env.d.ts
+test/
+src/generated

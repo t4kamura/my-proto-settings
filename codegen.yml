@@ -1,0 +1,21 @@
+# サーバー側のスキーマ定義
+schema: http://localhost:8080/v1/graphql/
+# クライアント側のスキーマ定義
+documents:
+  - ./src/**/*.graphql
+overwrite: true
+generates:
+  ./src/generated/graphql.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+    config:
+      skipTypename: false
+      withHooks: true
+      withHOC: false
+      withComponent: false
+      # プロジェクトによる
+      scalars:
+        timestamptz: string
+        uuid: string

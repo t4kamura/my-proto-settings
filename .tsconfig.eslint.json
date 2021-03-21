@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    // プロジェクトに合わせて設定
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "components/**/*.tsx",
+    "server/**/*.ts",
+    "pages/**/*.ts",
+    "pages/**/*.tsx",
+    "test/**/*/*.ts",
+    "test/**/*/*.tsx",
+    "utils/**/*.ts",
+    "utils/**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
+}
